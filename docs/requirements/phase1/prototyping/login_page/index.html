@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日语学习App - 登录</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-area">
+      <img src="logo.svg" alt="App Logo" class="logo-img" />
+      <h1 class="brand-name">日语学习App</h1>
+    </div>
+    <form class="login-form" autocomplete="off">
+      <div class="input-group">
+        <input type="text" id="account" name="account" placeholder="手机号/邮箱" required autofocus>
+        <span class="input-error" id="account-error"></span>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" name="password" placeholder="密码" required>
+        <button type="button" class="toggle-password" aria-label="显示/隐藏密码"></button>
+        <span class="input-error" id="password-error"></span>
+      </div>
+      <button type="submit" class="login-btn" disabled>登录</button>
+      <div class="form-links">
+        <a href="#" class="forgot-link">忘记密码？</a>
+        <span>|</span>
+        <a href="#" class="register-link">注册新账号</a>
+      </div>
+    </form>
+    
+  </div>
+  <div class="loading-mask" id="loading-mask" style="display:none;">
+    <div class="loader"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
